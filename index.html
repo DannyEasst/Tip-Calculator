@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="background">
+    <div class="main__box">
+      <div class="left">
+        <div class="bill">
+          <div class="bill__word">Bill</div>
+          <input placeholder="0" type="number" class="bill__input" />
+        </div>
+
+        <div>
+          <div class="select__tip__word">Select Tip %</div>
+          <div class="percentage__grid__main">
+            <button class="percentage__grid five">5%</button>
+            <button class="percentage__grid ten">10%</button>
+            <button class="percentage__grid fifteen">15%</button>
+            <button class="percentage__grid twenty__five" >25%</button>
+            <button class="percentage__grid fifty">50%</button>
+            <input
+              class="percentage__grid custom" 
+              placeholder="Custom"
+            />
+          </div>
+        </div>
+
+        <div class="number__of__people">
+          <div class="numeber__of__people__word">Number of People</div>
+          <input placeholder="0" class="number__of__people__input" />
+        </div>
+      </div>
+      <div class="right">
+        <div class="amount__box">
+          <div class="amount__text">Tip Amount</div>
+          <div class="per__person">/ person</div>
+          <div class="amount__val"></div>
+        </div>
+        <div class="total__box">
+          <div class="total__text">Tip Amount</div>
+          <div class="per__person">/ person</div>
+          <div class="total__val"></div>
+        </div>
+        <div>
+          <btn class="reset__btn">RESET</btn>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
